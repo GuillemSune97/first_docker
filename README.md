@@ -14,3 +14,5 @@ Migrate the django database to the db service on the db container (?):
 ```bash
 $ python manage.py migrate
 ```
+
+Continue
