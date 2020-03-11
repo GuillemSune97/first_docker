@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for customer in customers %}
+        <div class="customer customer{{ forloop.counter0 }}">
+            <h2>Customer number {{ forloop.counter }}</h2>
+            <p>Name: {{ customer.name }}</p>
+            <!-- <h2><a href="">{{ customer. }}</a></h2> -->
+            <p>Email: {{ customer.email }}</p>
+            <p>Birth: {{ customer.birth_date }}</p>
+            <p>Iteration: {{ forloop.counter0 }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

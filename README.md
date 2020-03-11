@@ -23,4 +23,4 @@ Migrate the django database to the db service on the db container (?):
 $ python manage.py migrate
 ```
 
-Continue test
+django girls checkpoint: <a href="https://tutorial.djangogirls.org/en/extend_your_application/">aquí</a>

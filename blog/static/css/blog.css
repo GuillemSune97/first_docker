@@ -1,0 +1,11 @@
+body {
+  padding: 1em;
+}
+h1 a, h2 a {
+  color: rgb(221, 104, 20);
+  font-family: 'Lobster';
+}
+
+.customer {
+  padding: 1.5em 0;
+}
