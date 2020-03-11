@@ -2,7 +2,7 @@
 
 <h2>Summary</h2>
 <p>I wanted to learn Docker, so I'm making this project to follow Docker's documentation & work teammates to learn how it works.</p>
-<p>At the same time, I'm doing the <a href="https://tutorial.djangogirls.org/en/" target="_blank">Django Girls tutorial</a> to learn Python and Django.</p>
+<p>At the same time, I'm doing the <a href="https://tutorial.djangogirls.org/en/">Django Girls tutorial</a> to learn Python and Django.</p>
 <p><i>I'm only going to explain the Docker part.</i></p>
 
 <h2>Docker</h2>
