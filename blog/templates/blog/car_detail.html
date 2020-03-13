@@ -1,0 +1,7 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h2>Cotxe {{ car.pk }}</h2>
+    <p>{{ car.color }} {{ car.brand }}</p>
+    <p><a href="{% url 'customer_detail' pk=car.customer.pk %}">{{ car.customer }}</a></p>
+{% endblock %}

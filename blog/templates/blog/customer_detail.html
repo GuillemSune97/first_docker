@@ -1,0 +1,24 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div>
+        <p><strong>Customer details</strong></p>
+        <p>{{ customer.name }}</p>
+        <p>{{ customer.email }}</p>
+        <p>{{ customer.birth_date }}</p>
+        <p><a href="{% url 'customer_edit' pk=customer.pk %}">Edit</a></p>
+    </div>
+  
+    <div style="margin-top: 1em;">
+        {% if cars %}
+            <p><strong>Customer cars</strong></p>
+            {% for car in cars %}
+                <div class="car">            
+                  <p><a href="{% url 'car_detail' pk=car.pk %}">{{ car.color }} {{ car.brand }} : {{ car.purchase_date }}</a></p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p><strong>Has no cars</strong></p>
+        {% endif %}
+    </div>
+{% endblock %}

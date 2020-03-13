@@ -4,8 +4,7 @@
     {% for customer in customers %}
         <div class="customer customer{{ forloop.counter0 }}">
             <h2>Customer number {{ forloop.counter }}</h2>
-            <p>Name: {{ customer.name }}</p>
-            <!-- <h2><a href="">{{ customer. }}</a></h2> -->
+            <p>Name: <a href="{% url 'customer_detail' pk=customer.pk %}">{{ customer.name }}</a></p>
             <p>Email: {{ customer.email }}</p>
             <p>Birth: {{ customer.birth_date }}</p>
             <p>Iteration: {{ forloop.counter0 }}</p>

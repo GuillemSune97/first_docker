@@ -8,6 +8,10 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
+        <div style="border:1px solid black;padding:1em;">
+            <a href="{% url 'customer_new' %}" class="top-menu">Add customer</span></a>
+            <a href="{% url 'car_new' %}" class="top-menu">Add car</span></a>
+        </div>
         <div>
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
